@@ -54,6 +54,9 @@ input {
   background-color:azure;
 }
 
+.footerlink{
+  color:white;
+}
 button {
   font-size: 18px;
   cursor: pointer;
@@ -79,6 +82,15 @@ button {
 #errorOrCity {
   color: greenyellow;
   font-size: 18px;
+  font-weight: bold;
+  background-color: navy;
+}
+
+.showInfo{
+  color: greenyellow;
+  font-size: 12px;
+  margin-left: 10px;
+  float:right;
   font-weight: bold;
   background-color: navy;
 }
