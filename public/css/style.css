@@ -1,0 +1,84 @@
+body {
+  color: #333333;
+  font-family: arial;
+  margin: 0 auto;
+  max-width: 650px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../img/Weather-shades.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  background-size: 900px 700px;
+}
+
+header {
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.main-content {
+  flex-grow: 1;
+  margin: 10px;
+  padding: 20px;
+}
+
+footer {
+  color: #888888;
+  border-top: 1px solid #eeeeee;
+  padding: 16px 0;
+  margin: 16px;
+}
+
+h1 {
+  font-size: 64px;
+  color: lightyellow;
+}
+
+header a {
+  color: #888888;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+.portrait {
+  width: 250px;
+}
+
+input {
+  font-size: 15px;
+  border: 1px solid green;
+  padding: 12px;
+  background-color:azure;
+}
+
+button {
+  font-size: 18px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 1px;
+  background-color: black;
+  color: white;
+}
+
+#showWeather {
+  color: greenyellow;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: navy;
+}
+
+.highlight {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+
+#errorOrCity {
+  color: greenyellow;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: navy;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="icon" href="../../img/weather.png">
+  <title>Weather</title>
+</head>
+
+<body>  
+  <div class='main-content'>    
+    {{>headers}}    
+    {{!-- <span class='highlight'>use this to get your weather!</span> --}}
+    <br></br>
+    <form>
+      <input autofocus='true' id='searchValue' placeholder='Enter your location' type='text'></input>
+      <button>search</button>
+    </form>
+    <br></br>
+    <img id='imageloading' width='80px' src='../../img/weather_animated.gif' style='display: none';>
+    <span id='errorOrCity'></span>
+    <br></br>
+    <span id='showWeather'></span>
+  </div>
+  {{>footers}}
+  <script src="../../js/app.js"></script>
+</body>
+
+</html>
