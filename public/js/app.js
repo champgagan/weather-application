@@ -9,7 +9,7 @@ form.addEventListener("submit", (e) => {
   weatherdata.textContent = "";
   imageL.style.display='block';
   text.textContent = '';
-  fetch("http://localhost:8081/weather?address=" + locationText.value)
+  fetch("/weather?address=" + locationText.value)
     .then((response) => response.json())
     .then((data) => {
       if (data.error) {

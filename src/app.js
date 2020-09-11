@@ -9,6 +9,7 @@ const viewsPath = path.join(__dirname, "../templates/views");
 const partialsPath = path.join(__dirname, "../templates/partials");
 
 const app = express();
+const port = process.env.PORT || 8081;
 app.set("view engine", "hbs");
 app.set("views", viewsPath);
 app.use(express.static(publicDirectory));
@@ -38,9 +39,9 @@ app.get("/weather", (req, res) => {
     geocode(address, (error, { longitude, latitude, location } = {}) => {
       if (longitude && latitude) {
         forecast(latitude, longitude, (forecasterror, forecastdata) => {
-            if(forecasterror){
-                return   res.send({ error:forecasterror });
-            }
+          if (forecasterror) {
+            return res.send({ error: forecasterror });
+          }
           res.send({
             forecast: forecastdata,
             location: location,
@@ -80,6 +81,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen("8081", () => {
+app.listen(port, () => {
   console.log("server is started at port 8081");
 });
